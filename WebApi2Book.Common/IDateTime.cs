@@ -9,4 +9,5 @@ namespace WebApi2Book.Common
     {
         DateTime UtcNow { get; }
     }
+
 }

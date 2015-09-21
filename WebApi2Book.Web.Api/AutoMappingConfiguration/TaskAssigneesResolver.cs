@@ -13,7 +13,7 @@ namespace WebApi2Book.Web.Api.AutoMappingConfiguration
 {
     public class TaskAssigneesResolver : ValueResolver<Task, List<User>>
     {
-        public IAutoMapper AutoMapper
+        public IAutoMapper AutoMapper 
         {
             get { return WebContainerManager.Get<IAutoMapper>(); }
         }

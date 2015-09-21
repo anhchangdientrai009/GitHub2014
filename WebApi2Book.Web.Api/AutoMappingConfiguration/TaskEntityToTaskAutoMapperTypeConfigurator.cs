@@ -9,7 +9,7 @@ namespace WebApi2Book.Web.Api.AutoMappingConfiguration
 {
     public class TaskEntityToTaskAutoMapperTypeConfigurator : IAutoMapperTypeConfigurator
     {
-        public void Configure()
+        public void Configure()  
         {
             Mapper.CreateMap<Task, Models.Task>()
                 .ForMember(opt => opt.Links, x => x.Ignore())
